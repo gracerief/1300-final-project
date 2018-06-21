@@ -1,0 +1,546 @@
+@font-face {
+  font-family: 'Lato', sans-serif;
+  src: url("fonts/Lato/Lato-Regular.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url('../images/burj.jpg') center center no-repeat fixed;
+  background-size: cover;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  position: relative;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  min-height: 650px;
+}
+
+#solid {
+  background-color: rgba(20,20,20,0.9);
+}
+
+/*Nav Bar Styling*/
+#nav {
+  width: 100%;
+  height: 125px;
+  background-color: rgba(0, 0, 0, 0.25)
+}
+
+#logo {
+  float: left;
+  height: 125px;
+  width: auto;
+  margin-left: 10px;
+}
+
+#nav nav {
+  float: right;
+}
+
+#nav li {
+  position: relative;
+
+  display: inline;
+  padding-left: 15px;
+  padding-right: 15px;
+  top: 30px;
+  right: 50px;
+  font-size: 20px;
+}
+
+#nav a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+#nav a:hover {
+  color: #B31B1B;
+  font-weight: bold;
+}
+
+/*Home Page Styling*/
+#header {
+  position: relative;
+  top: 150px;
+}
+
+#header h1 {
+  display: none;
+  text-align: center;
+  font-size: 70px;
+  color: white;
+  font-weight: 100;
+}
+
+#header #arrow {
+  margin: auto;
+  max-width: 15vw;
+  margin-left: 42.5vw;
+  margin-right: 42.5vw;
+  margin-top: 160px;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+/*About Styling*/
+#about {
+  margin-top: 200px;
+  width: 100%;
+  height: 450px;
+  background-color: rgba(20,20,20,0.9);
+}
+
+#about h2, p {
+  color: white;
+}
+
+#about h2 {
+  color: #B31B1B;
+  font-size: 40px;
+}
+
+#about p {
+  line-height: 1.5em;
+  font-size: 16px;
+}
+
+.left-info {
+  position: relative;
+  float: left;
+  margin-top: 5px;
+  margin-left: 50px;
+  width: 600px;
+}
+
+#about img {
+  position: relative;
+  top: 65px;
+  right: 75px;
+  height: 300px;
+  width: auto;
+  float: right;
+  border: 10px solid rgba(179,27,27,0.5)
+}
+
+#listserv {
+  background-color: rgba(255,255,255,0.8);
+  width: 100%;
+  min-height: 300px;
+  height: auto;
+  text-align: center;
+}
+
+#listserv h1 {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  font-size: 40px;
+  color: #B31B1B;
+  margin: 0;
+}
+
+#mail {
+  margin:0;
+}
+
+#mailinglist {
+  position: relative;
+  padding-top: 50px;
+  margin: 0 auto;
+  width: 600px;
+  height: 60px;
+  color: #b31b1b;
+  font-size: 35px;
+  padding: .15rem 1rem;
+  border: 2px solid rgba(9,44,121,.15);
+}
+
+#submit {
+  display: inline;
+}
+
+#submit button {
+  position: relative;
+  left: 10px;
+  bottom: 3px;
+  height: 58px;
+  width: 130px;
+  font-size: 33px;
+}
+
+#listError, #listErrorFill  {
+  margin-left: 273px;
+}
+
+/*EBoard Styling*/
+#eboard {
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  max-width: 900px;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+#eboard h2 {
+  color: #B31B1B;
+  font-size: 56px;
+}
+
+.board {
+  height: 625px;
+}
+
+.board h3 {
+  color: #B31B1B;
+  font-size: 36px;
+  line-height: 0;
+  margin-bottom: -5px;
+}
+
+.board h5 {
+  color: white;
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 0;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.description {
+  position: relative;
+  margin: 0 auto;
+  width: 450px;
+  bottom: 270px;
+  background-color: rgba(255,255,255,0.8);
+  min-height: 227px;
+  display: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.description h4 {
+  padding-top: 20px;
+  margin-bottom: 10px;
+  color: #B31B1B;
+  font-size: 26px;
+}
+
+.description p {
+  color: black;
+  line-height: 1.7em;
+  padding-left: 8px;
+  padding-right: 5px;
+  font-size: 16px;
+  text-align: left;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.description a {
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: #b5b5b5;
+}
+
+.description a:hover {
+  color: #b31b1b;
+}
+
+/*Photos of the eboard member class .headshot*/
+.headshot {
+  max-width: 460px;
+  margin: 0 auto;
+}
+
+.headshot img {
+  width: 450px;
+  height: 500px;
+  border: solid 5px rgba(179,27,27,0.7);
+}
+
+/*Photos Styling*/
+#photos {
+  position: relative;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+#photos h2 {
+  color: #B31B1B;
+  font-size: 56px;
+}
+
+#photos img {
+  width: 550px;
+  height: 365px;
+  margin: 20px 20px;
+  border: 5px solid rgba(179,27,27,0.8)
+}
+
+/*Photo overlay styling*/
+.gallery {
+  min-width: 600px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.imcontainer {
+  height: 365px;
+  margin: auto;
+  margin-bottom: 40px;
+  width: auto;
+  float: left;
+}
+
+.cap-overlay {
+  position: relative;
+  top: -108%;
+  background-color: white;
+  opacity: 0;
+  overflow: hidden;
+  width: 550px;
+  margin: auto;
+  height: 0;
+  transition: .5s ease;
+}
+
+.imcontainer:hover .cap-overlay {
+  height: auto;
+  max-height: 13%;
+  width: 542px;
+  padding: 4px;
+  margin: auto;
+  position: relative;
+  opacity: .7;
+  top: -108%;
+}
+
+.caption {
+  color: black;
+  font-size: 16px;
+  line-height: 1.5em;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  max-width: inherit;
+}
+
+/*Events Styling*/
+#events {
+  position: relative;
+  height: 75vh;
+}
+
+#events h2 {
+  text-align: center;
+  color: #B31B1B;
+  font-size: 56px;
+}
+
+#events li {
+  list-style: none;
+  margin: auto;
+  color: white;
+  font-size: 14px;
+  line-height: 1em;
+  max-width: 800px;
+  padding-right: 20px;
+}
+
+#events h4 {
+  color: white;
+  font-size: 30px;
+  margin-left: -20px;
+  margin-bottom: 15px;
+}
+
+/*Contact Styling*/
+#contact {
+  position: relative;
+  height: auto;
+}
+
+#contact h2 {
+  text-align: center;
+  color: #B31B1B;
+  font-size: 56px;
+}
+
+#notes {
+  margin-left: 200px;
+  margin-bottom: 100px;
+  font-size: 20px;
+}
+
+#notes a {
+  color: #b31b1b;
+  text-decoration: none;
+}
+
+#notes a:hover {
+  color: white;
+}
+
+form {
+  margin-left: 100px;
+  margin-bottom: 70px;
+}
+
+form div + div {
+  margin-top: 20px;
+}
+
+label {
+  display: inline-block;;
+  width: 90px;
+  text-align: right;
+  padding-right: 5px;
+}
+
+input, textarea {
+  margin-left: 10px;
+  width: 400px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+input:focus, textarea:focus {
+  outline: none !important;
+  border: 2px rgba(0,0,0,0.5) solid;
+  box-shadow: 0 0 15px rgba(255,255,255,0.8);
+}
+
+textarea {
+  vertical-align: top;
+  height: 8em;
+}
+
+.button {
+  padding-left: 110px;
+}
+
+button {
+  background-color: rgba(20,20,20,0.9);
+  width: 100px;
+  height: 35px;
+  border: 3px #b31b1b solid;
+  font-family: "Helvetica", sans-serif;
+  color: #b31b1b;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: rgba(50,50,50,0.8);
+  color: white;
+  border-color: white;
+  cursor: pointer;
+}
+
+label {
+  font-size: 20px;
+  color: white;
+}
+
+/*Error Messages*/
+.errorContainer {
+  background-color: rgba(183,7,7,0.65);
+  color: white;
+  font-family: "Helvetica", sans-serif;
+  border: 1px #C90909 solid;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin-top: 5px;
+  display: block;
+  width: 250px;
+}
+
+.hiddenError {
+  display: none;
+}
+
+/*ThankYou Styling*/
+#thanks {
+  position: relative;
+  height: auto;
+  padding-bottom: 50px;
+}
+
+#thanks h2 {
+  text-align: center;
+  color: #B31B1B;
+  font-size: 56px;
+}
+
+.twoPar p{
+  font-size: 140%;
+  line-height:150%;
+  text-align: left;
+  margin-left:10%;
+  margin-right:10%;
+}
+
+#ask {
+  margin-left: 0;
+}
+
+#ask label {
+  width: 300px;
+}
+
+#ask div {
+  display: inline;
+  margin-left: 20px;
+}
+
+#ask input {
+  width: 70px;
+}
+
+#asking label {
+  margin-left: 10px;
+  width: 50px;
+}
+
+#question {
+  position: relative;
+  right: 7px;
+  margin-bottom: 20px;
+}
+
+#ask input:active,
+#ask input:focus,
+#ask input.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/*listserv.php styling*/
+#listservmsg {
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  padding-top: 50px;
+  width: 700px;
+  margin: 0 auto;
+}
+
+#listservmsg a {
+  color: #b31b1b;
+  text-decoration: none;
+}
+
+#listservmsg a:hover {
+  color: white;
+  text-decoration: underline;
+}
